@@ -2,7 +2,9 @@
 
 Pseudolang VSCode
 
-## [1.0.0] - Initial Release
+## [0.9.1] - Fixes
+
+## [0.9.0] - Initial Release
 
 ### Added
 
