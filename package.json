@@ -3,6 +3,8 @@
   "displayName": "Pseudolang-VSCode",
   "description": "Adds support for Pseudolang",
   "version": "0.9.0",
+  "publisher": "PseudolangSoftwareFoundation",
+  "icon": "icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/PseudoLang-Software-Foundation/Pseudolang-VSCode.git"
