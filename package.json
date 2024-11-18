@@ -1,0 +1,29 @@
+{
+  "name": "pseudolang-vscode",
+  "displayName": "Pseudolang-VSCode",
+  "description": "Adds support for Pseudolang",
+  "version": "0.9.0",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "pseudolang",
+      "aliases": ["Pseudolang", "pseudolang"],
+      "extensions": [".psl"],
+      "icon": {
+        "light": "./icons/psl-light.png",
+        "dark": "./icons/psl-dark.png"
+      },
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "pseudolang",
+      "scopeName": "source.pseudolang",
+      "path": "./syntaxes/pseudolang.tmLanguage.json"
+    }]
+  }
+}

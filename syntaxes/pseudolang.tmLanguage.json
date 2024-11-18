@@ -1,0 +1,99 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "Pseudolang",
+    "scopeName": "source.pseudolang",
+    "fileTypes": ["psl"],
+    "patterns": [
+        {
+            "comment": "Block Comments",
+            "begin": "COMMENTBLOCK",
+            "end": "COMMENTBLOCK",
+            "name": "comment.block.pseudolang"
+        },
+        {
+            "comment": "Line Comments",
+            "match": "COMMENT.*$",
+            "name": "comment.line.pseudolang"
+        },
+        {
+            "comment": "Control Keywords",
+            "match": "\\b(IF|ELSE|REPEAT|TIMES|UNTIL|FOR|EACH|IN|RETURN|PROCEDURE|CLASS|IMPORT)\\b",
+            "name": "keyword.control.pseudolang"
+        },
+        {
+            "comment": "Math Functions",
+            "match": "\\b(RANDOM|ABS|CEIL|FLOOR|POW|SQRT|SIN|COS|TAN|ASIN|ACOS|ATAN|EXP|LOG|LOGTEN|LOGTWO|GCD|FACTORIAL|DEGREES|RADIANS|MIN|MAX|HYPOT)\\b",
+            "name": "support.function.math.pseudolang"
+        },
+        {
+            "comment": "List Functions",
+            "match": "\\b(LENGTH|SORT|APPEND|REMOVE|INSERT)\\b",
+            "name": "support.function.list.pseudolang"
+        },
+        {
+            "comment": "String Functions",
+            "match": "\\b(SUBSTRING|CONCAT)\\b",
+            "name": "support.function.string.pseudolang"
+        },
+        {
+            "comment": "IO Functions",
+            "match": "\\b(DISPLAY|DISPLAYINLINE|INPUT|TOSTRING|TONUM)\\b",
+            "name": "support.function.io.pseudolang"
+        },
+        {
+            "comment": "Constants",
+            "match": "\\b(TRUE|FALSE)\\b",
+            "name": "constant.language.pseudolang"
+        },
+        {
+            "comment": "Numbers",
+            "match": "\\b\\d+(\\.\\d+)?\\b",
+            "name": "constant.numeric.pseudolang"
+        },
+        {
+            "comment": "Formatted String",
+            "begin": "f\"",
+            "end": "\"",
+            "name": "string.quoted.double.format.pseudolang",
+            "patterns": [
+                {
+                    "match": "\\{[^}]*\\}",
+                    "name": "variable.other.pseudolang"
+                }
+            ]
+        },
+        {
+            "comment": "Raw String",
+            "begin": "r\"",
+            "end": "\"",
+            "name": "string.quoted.double.raw.pseudolang"
+        },
+        {
+            "comment": "Regular String",
+            "begin": "\"",
+            "end": "\"",
+            "name": "string.quoted.double.pseudolang"
+        },
+        {
+            "comment": "Operators",
+            "match": "(<-|\\+|-|\\*|/|MOD|=|NOT=|>|<|>=|<=|AND|OR|NOT)",
+            "name": "keyword.operator.pseudolang"
+        },
+        {
+            "comment": "Lists",
+            "begin": "\\[",
+            "end": "\\]",
+            "patterns": [
+                {
+                    "include": "$self"
+                }
+            ],
+            "name": "meta.structure.list.pseudolang"
+        },
+        {
+            "comment": "Block Braces",
+            "match": "[{}]",
+            "name": "punctuation.section.block.pseudolang"
+        }
+    ]
+}
