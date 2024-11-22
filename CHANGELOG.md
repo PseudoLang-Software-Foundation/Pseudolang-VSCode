@@ -2,6 +2,8 @@
 
 Pseudolang VSCode
 
+## [0.9.3] - Update for the latest version of Pseudolang
+
 ## [0.9.2] - Update for Pseudolang 0.9.49
 
 ## [0.9.1] - Fixes

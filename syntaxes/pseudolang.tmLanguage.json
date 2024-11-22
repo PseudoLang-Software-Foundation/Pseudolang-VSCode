@@ -17,8 +17,23 @@
         },
         {
             "comment": "Control Keywords",
-            "match": "\\b(IF|ELSE|REPEAT|TIMES|UNTIL|FOR|EACH|IN|RETURN|PROCEDURE|CLASS|IMPORT)\\b",
+            "match": "\\b(IF|ELSE|REPEAT|TIMES|UNTIL|FOR|EACH|IN|RETURN|PROCEDURE|CLASS|IMPORT|TRY|CATCH)\\b",
             "name": "keyword.control.pseudolang"
+        },
+        {
+            "comment": "Constants",
+            "match": "\\b(TRUE|FALSE)\\b",
+            "name": "constant.language.pseudolang"
+        },
+        {
+            "comment": "Numbers",
+            "match": "\\b\\d+(\\.\\d+)?\\b",
+            "name": "constant.numeric.pseudolang"
+        },
+        {
+            "comment": "Operators",
+            "match": "(<-|\\+|-|\\*|/|MOD|=|NOT=|>|<|>=|<=|AND|OR|NOT)",
+            "name": "keyword.operator.pseudolang"
         },
         {
             "comment": "Math Functions",
@@ -32,23 +47,13 @@
         },
         {
             "comment": "String Functions",
-            "match": "\\b(SUBSTRING|CONCAT)\\b",
+            "match": "\\b(SUBSTRING|CONCAT|TRIM|REPLACE|UPPERCASE|LOWERCASE)\\b",
             "name": "support.function.string.pseudolang"
         },
         {
             "comment": "IO Functions",
-            "match": "\\b(DISPLAY|DISPLAYINLINE|INPUT|TOSTRING|TONUM|EXIT)\\b",
+            "match": "\\b(DISPLAY|DISPLAYINLINE|INPUT|TOSTRING|TONUM|EXIT|SLEEP|TIME|TIMESTAMP|TIMEZONE|TIMEZONES)\\b",
             "name": "support.function.io.pseudolang"
-        },
-        {
-            "comment": "Constants",
-            "match": "\\b(TRUE|FALSE)\\b",
-            "name": "constant.language.pseudolang"
-        },
-        {
-            "comment": "Numbers",
-            "match": "\\b\\d+(\\.\\d+)?\\b",
-            "name": "constant.numeric.pseudolang"
         },
         {
             "comment": "Formatted String",
@@ -73,11 +78,6 @@
             "begin": "\"",
             "end": "\"",
             "name": "string.quoted.double.pseudolang"
-        },
-        {
-            "comment": "Operators",
-            "match": "(<-|\\+|-|\\*|/|MOD|=|NOT=|>|<|>=|<=|AND|OR|NOT)",
-            "name": "keyword.operator.pseudolang"
         },
         {
             "comment": "Lists",
