@@ -22,12 +22,12 @@
         },
         {
             "comment": "Math Functions",
-            "match": "\\b(RANDOM|ABS|CEIL|FLOOR|POW|SQRT|SIN|COS|TAN|ASIN|ACOS|ATAN|EXP|LOG|LOGTEN|LOGTWO|GCD|FACTORIAL|DEGREES|RADIANS|MIN|MAX|HYPOT)\\b",
+            "match": "\\b(RANDOM|ABS|CEIL|FLOOR|POW|SQRT|SIN|COS|TAN|ASIN|ACOS|ATAN|EXP|LOG|LOGTEN|LOGTWO|GCD|FACTORIAL|DEGREES|RADIANS|MIN|MAX|HYPOT|ROUND)\\b",
             "name": "support.function.math.pseudolang"
         },
         {
             "comment": "List Functions",
-            "match": "\\b(LENGTH|SORT|APPEND|REMOVE|INSERT)\\b",
+            "match": "\\b(LENGTH|SORT|APPEND|REMOVE|INSERT|SPLIT)\\b",
             "name": "support.function.list.pseudolang"
         },
         {
@@ -37,7 +37,7 @@
         },
         {
             "comment": "IO Functions",
-            "match": "\\b(DISPLAY|DISPLAYINLINE|INPUT|TOSTRING|TONUM)\\b",
+            "match": "\\b(DISPLAY|DISPLAYINLINE|INPUT|TOSTRING|TONUM|EXIT)\\b",
             "name": "support.function.io.pseudolang"
         },
         {
