@@ -42,12 +42,12 @@
         },
         {
             "comment": "List Functions",
-            "match": "\\b(LENGTH|SORT|APPEND|REMOVE|INSERT|SPLIT)\\b",
+            "match": "\\b(LENGTH|SORT|APPEND|REMOVE|INSERT|SPLIT|RANGE)\\b",
             "name": "support.function.list.pseudolang"
         },
         {
             "comment": "String Functions",
-            "match": "\\b(SUBSTRING|CONCAT|TRIM|REPLACE|UPPERCASE|LOWERCASE)\\b",
+            "match": "\\b(SUBSTRING|CONCAT|TRIM|REPLACE|UPPERCASE|LOWERCASE|CONTAINS|FIND)\\b",
             "name": "support.function.string.pseudolang"
         },
         {
